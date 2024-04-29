@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <!--Nav Menu-->
@@ -25,12 +27,12 @@
                         <a href="#about" class="nav-link ">About</a>
                         <div class="circle"></div>
                     </li>
-                    <li class="nav_list">
+                    <!-- <li class="nav_list">
                         <a href="#skills" class="nav-link ">Skills</a>
                         <div class="circle"></div>
-                    </li>
+                    </li> -->
                     <li class="nav_list">
-                        <a href="#projects" class="nav-link ">Projects</a>
+                        <a href="#portfolio" class="nav-link ">Projects</a>
                         <div class="circle"></div>
                     </li>
                     <li class="nav_list">
@@ -57,9 +59,9 @@
         <main class="wrapper">
             <section class="featured-box" id="home">
                 <div class="featured-text">
-                    <div class="hello">
-                        <p>Hello I,m</p>
-                    </div>
+                    <h3>Hello, It's Me</h3>
+                    <h1>Methembe Vundla</h1>
+                    <!-- <h3>And I'm a <span class="text"></span></h3> -->
                     <div class="featured-name">
                         <span class="typedText"></span>
                     </div>
@@ -67,10 +69,10 @@
                         <p>My name is Methembe! I'm a web developer with experince in languages like HTML, CSS, Javascript and Python</p>
                     </div>
                     <div class="text-btn">
-                        <button class="btn hire-btn">
+                        <!-- <button class="btn hire-btn">
                             Hire Me
-                        </button>
-                        <button class="btn">
+                        </button> -->
+                        <button class="btn" onclick="window.location.href='https://drive.google.com/file/d/1VpHSfvRNuQGlJJKCAU4m-rKQRFRupH1n/view?usp=drivesdk';">
                             Download CV<i class="uil uil-file"></i>
                         </button>
                     </div>
@@ -84,7 +86,7 @@
                 </div>
                 <div class="featured-image">
                     <div class="image">
-                        <img src="./me.jpg" alt="">
+                        <img src="./images/me.jpg" alt="">
                     </div>
                 </div>
             </section>
@@ -103,7 +105,7 @@
                                     <p>A dedicated and proactive individual with a profound interest in frontend development. My journey began with the classic “Hello, World” in C, sparking a lifelong passion for software engineering. While my experience spans full stack development, my focus and enthusiasm lie in crafting intuitive and dynamic user interfaces. Through self-directed learning, including extensive reading and online tutorials, I’ve honed my skills in problem-solving, rapid learning, and staying abreast of the latest frontend technologies. My GitHub portfolio showcases a variety of projects that reflect my commitment to excellence in software development.</p>
                                 </figcaption>
                             </figure>
-                            <button class="about-me-btn">Hire Me</button>
+                            <button class="about-me-btn" onclick="window.location.href='https://drive.google.com/file/d/1VpHSfvRNuQGlJJKCAU4m-rKQRFRupH1n/view?usp=drivesdk';">Hire Me</button>
                         </div>
                     </div>
                     <div class="skill">
@@ -143,7 +145,7 @@
                             <span class="title">Webflow</span>
                             <div class="skill-bar">
                                 <span class="skill-per webflow">
-                                    <span class="tooltip">70%</span>
+                                    <span class="tooltip">60%</span>
                                 </span>
                             </div>
                         </div>
@@ -159,7 +161,31 @@
                             <span class="title">Figma</span>
                             <div class="skill-bar">
                                 <span class="skill-per figma">
+                                    <span class="tooltip">72%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">Adobe Illustrator</span>
+                            <div class="skill-bar">
+                                <span class="skill-per illustrator">
                                     <span class="tooltip">85%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">Adobe Photoshop</span>
+                            <div class="skill-bar">
+                                <span class="skill-per photoshop">
+                                    <span class="tooltip">80%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">After Effects</span>
+                            <div class="skill-bar">
+                                <span class="skill-per aftereffects">
+                                    <span class="tooltip">50%</span>
                                 </span>
                             </div>
                         </div>
@@ -167,28 +193,70 @@
                 </div>
             </section>
             <!---Projects Box--->
-            <section class="section" id="Projects">
-                <div class="top-header">
-                    <h1>Projects</h1>
-                </div>
-                <div class="project-container">
-                    <div class="project-box">
-                        <i class="uil uil-briefcase-alt"></i>
-                        <h3>Completed</h3>
-                        <label for=""></label>
+            <section class="section portfolio" id="portfolio">
+                <h2 class="heading">Latest <span>Project</span></h2>
+
+                <div class="portfolio-container">
+                    <div class="portfolio-box">
+                        <img src="images/img1.png" >
+
+                        <div class="portfolio-layer">
+                            <h4>SkillUp College Website</h4>
+                            <p>This is a educational website done using Html, Css, Javascript and Formspree. 
+                            </p>
+                            <a href="#"><i class="bx bx-link-external  more"></i></a>
+                        </div>
                     </div>
-                    <div class="project-box">
-                        <i class="uil uil-users-alt"></i>
-                        <h3>Completed</h3>
-                        <label for="">70+ Happy Clients</label>
+                    <div class="portfolio-box" id="projects">
+                        <img src="images/gym.png" >
+
+                        <div class="portfolio-layer">
+                            <h4>Vawulens Gym Website</h4>
+                            <p>This is a gym website done using React.js, Html and Css. For more information. Click the button below to be redirected to the page.
+                            </p>
+                            <a href="#"><i class="bx bx-link-external  more"></i></a>
+                        </div>
                     </div>
-                    <div class="project-box">
-                        <i class="uil uil-award"></i>
-                        <h3>Experience</h3>
-                        <label for="">3+ Years in web development</label>
+                    <div class="portfolio-box">
+                        <img src="images/img2.png" >
+
+                        <div class="portfolio-layer">
+                            <h4>Manage Landing Page</h4>
+                            <p>Manage Landing page is a landing page built using html, css and javascript.Click the button below to be redirected to the page.
+                            </p>
+                            <a href="#"><i class="bx bx-link-external more"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-box">
+                        <img src="images/img4.png" >
+
+                        <div class="portfolio-layer">
+                            <h4>Mzansi Luxuries Website</h4>
+                            <p>This is a hotel management website for a Mzansi Luxuries. Click the button below to be redirected to my GitHub.</p>
+                            <a href="#"><i class="bx bx-link-external more"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-box">
+                        <img src="images/img6.png" >
+
+                        <div class="portfolio-layer">
+                            <h4>Krypto Web Design</h4>
+                            <p>This is a ui/ux design for crypto company that deals with NFTs. Click the button below to be redirected to Figma Design.</p>
+                            <a href="#"><i class="bx bx-link-external"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-box">
+                        <img src="images/msics.png" >
+
+                        <div class="portfolio-layer">
+                            <h4>Msics Pharma Website</h4>
+                            <p>This is a website for a pharmaceutical company. The website was built using Webflow and Figma. Click the button below to be redirected to the website.</p>
+                            <a href="#"><i class="bx bx-link-external more"></i></a>
+                        </div>
                     </div>
                 </div>
             </section>
+
             <!--Contact Box-->
             <section class="section" id="contact">
                 <div class="top-header">
@@ -199,7 +267,7 @@
                     <div class="col">
                         <div class="contact-info">
                             <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                            <p><i class="uil uil-envelope">methembedvundla583@gmail.com</i></p>
+                            <p><i class="uil uil-envelope">Email:methembedvundla583@gmail.com</i></p>
                             <p><i class="uil uil-phone">Phone: 0610226642</i></p>
                         </div>
                     </div>
@@ -250,5 +318,8 @@
             </div>
         </footer>
     </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
